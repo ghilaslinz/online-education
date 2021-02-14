@@ -4,7 +4,7 @@ import Link from "next/link";
 function Dashboard() {
 	const [data, setData] = useState([]);
 	useEffect(() => {
-		fetch("http://localhost:3000/api/forms", {
+		fetch("https://online-education-react.vercel.app/api/forms", {
 			method: "GET",
 		})
 			.then((res) => res.json())
