@@ -47,7 +47,7 @@ data={data}
 
 displayform.getInitialProps = async ({ query }) => {
 const { id } = query;
-const res = await fetch(`http://localhost:3000/api/findform/${id}`);
+const res = await fetch(`https://online-education-react.vercel.app/findform/${id}`);
 const json = await res.json();
 return { data: json };
 };
